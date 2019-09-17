@@ -49,7 +49,8 @@ Client = function (nom, prenom, pseudo, numeroClient) {
     Personne.call(this, nom, prenom, pseudo);
     this.numeroClient = numeroClient;
     this.getInfos = function () {
-        return this.nom + ' ' +  this.prenom + ' '  + this.pseudo + ' ' +this.numeroClient;
+
+        return this.getNomComplet() + ' ' + this.numeroClient;
     }
 };
 
